@@ -11,7 +11,7 @@ double len,brea;
 	this.len=len;
 	this.brea=brea;
 	}
-//returnArea method that return area of rectangle in double
+//returnArea method that returns area of rectangle in double
 	public double returnArea()
 	{
 	double z=len*brea;
