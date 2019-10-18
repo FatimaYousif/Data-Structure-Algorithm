@@ -18,7 +18,7 @@ public void withdraw(double in_amount)
 	}
 }
 
-// a child class of Accoutn class(parent class)
+// a child class of Account class(parent class)
 class savingAccount extends Account
 {
 	private double defaultInterestRate=2.5;
