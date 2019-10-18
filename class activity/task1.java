@@ -3,8 +3,8 @@ class Employee
 {
 int salary;
 int hours;
-//a function to set the values passed as paramaters
 
+//a function to set the values passed as paramaters
 public void getInfo(int salary,int hours)
 {
 this.salary=salary;
@@ -12,7 +12,6 @@ this.hours=hours;
 }
 
 //method to work on the salary
-
 public void AddSal()
 {
 
@@ -38,9 +37,11 @@ class EmployeeEx
 	public static void main(String args[])
 	{
 	Employee e=new Employee();
+
         //passing the salary and hours as the arguments
 	e.getInfo(20000,20);
 	e.display();
+
 	// CHECKING for less than 500 salary
 	e.getInfo(2,20);
 	e.AddSal();
