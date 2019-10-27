@@ -1,22 +1,30 @@
-public class DeleteDuplicate {
-public static void main(String [] args) {
-	int a[] = {20, 20, 30, 40, 50, 50, 50};
-	int size= 6;
-	for(int i=0; i<size; i++) {
-		if(a[i] == a[i+1] ) {
-			
-		               for(int j=i; j<size; j++)
-		               {
-		                   a[j] = a[j+1];
-		               }
-		           
-		          }
-		}
-	System.out.println("Now Array is :");
-	for(int x=0; x<(size-2); x++) {
-		System.out.print(a[x]);
-		System.out.print(" ");
-		
-	}
-}
+public class DuplicateElements {
+	public static int removeDuplicateElements(int arr[], int size){  
+        if (size==0 || size==1){  
+            return size;  
+        }  
+        int[] temp = new int[size];  
+        int j = 0;  
+        for (int i=0; i<size-1; i++){  
+            if (arr[i] != arr[i+1]){  
+                temp[j++] = arr[i];  
+            }  
+         }  
+        temp[j++] = arr[size-1];     
+        // Changing original array  
+        for (int i=0; i<j; i++){  
+            arr[i] = temp[i];  
+        }  
+        return j;  
+    }  
+       
+    public static void main (String[] args) {  
+        int arr[] = {20,20,30,40,50,50,50};  
+        int length = arr.length;  
+        length = removeDuplicateElements(arr, length);  
+        //printing array elements  
+        for (int i=0; i<length; i++)  
+           System.out.print(arr[i]+" ");  
+        System.out.println("Length of array is :" + length);
+    }  
 }
