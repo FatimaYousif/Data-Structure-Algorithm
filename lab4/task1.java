@@ -16,8 +16,8 @@ class toneEx
 		public static void main(String args[])
 		{
 		student s1=new student("fatima");
-		student s2=new student("ahmad");
-		student s3=new student("sehrish");
+		student s2=new student("sahiba");
+		student s3=new student("maryam");
 		
 		LinkedList<student> l=new LinkedList<student> ();
 		
